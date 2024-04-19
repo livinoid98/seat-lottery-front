@@ -18,7 +18,7 @@
             <span class="seat__header-wrap-content-sub-text">Server S/W개발 1팀,</span>
             <p class="seat__header-wrap-content-main-text">당신의 회식자리는,<br/> 친밀함을 가져야 하니까</p>
             <p class="seat__header-wrap-content-description">안녕하세요 어색하지 않은 회식문화를 만들어가는<br/>Server S/W 개발 1팀입니다.</p>
-            <button class="seat__header-wrap-content-button"><a href="/">설문조사 하러가기</a></button>
+            <button class="seat__header-wrap-content-button"><a href="#lottery">설문조사 하러가기</a></button>
           </div>
         </div>
       </div>
@@ -57,48 +57,48 @@
     
       <section class="seat__result" id="result">
         <div class="seat__result-title">
-          <span class="seat__result-title-description">{{ vote }} / 16명 설문완료</span>
-          <h3 class="seat__result-title-main-text">16명의 설문이 완료되면, 최종 내 자리가 결정됩니다.<br/>지금까지 내 자리 확인하기</h3>
+          <span class="seat__result-title-description">{{ vote }} / 12(선임)명 설문완료</span>
+          <h3 class="seat__result-title-main-text">12명의 설문이 완료되면, 최종 내 자리가 결정됩니다.<br/>지금까지 내 자리 확인하기</h3>
         </div>
         <div class="seat__result-main">
           <div class="seat__result-main-odd">
             <div class="seat__result-main-group">
+              <span class="seat__result-main-group-name">박병윤</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[0] }}</span>
-              <span class="seat__result-main-group-name">{{ shuffledArray[1] }}</span>
             </div>
             <div class="seat__result-main-group">
+              <span class="seat__result-main-group-name">{{ shuffledArray[1] }}</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[2] }}</span>
-              <span class="seat__result-main-group-name">{{ shuffledArray[3] }}</span>
             </div>
           </div>
           <div class="seat__result-main-even">
             <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">{{ shuffledArray[4] }}</span>
-              <span class="seat__result-main-group-name">{{ shuffledArray[5] }}</span>
+              <span class="seat__result-main-group-name">김현범</span>
+              <span class="seat__result-main-group-name">{{ shuffledArray[3] }}</span>
             </div>
             <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">{{ shuffledArray[6] }}</span>
-              <span class="seat__result-main-group-name">{{ shuffledArray[7] }}</span>
+              <span class="seat__result-main-group-name">{{ shuffledArray[4] }}</span>
+              <span class="seat__result-main-group-name">{{ shuffledArray[5] }}</span>
             </div>
           </div>
           <div class="seat__result-main-odd">
             <div class="seat__result-main-group">
+              <span class="seat__result-main-group-name">신용환</span>
+              <span class="seat__result-main-group-name">{{ shuffledArray[6] }}</span>
+            </div>
+            <div class="seat__result-main-group">
+              <span class="seat__result-main-group-name">{{ shuffledArray[7] }}</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[8] }}</span>
+            </div>
+          </div>
+          <div class="seat__result-main-even">
+            <div class="seat__result-main-group">
+              <span class="seat__result-main-group-name">박상직</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[9] }}</span>
             </div>
             <div class="seat__result-main-group">
               <span class="seat__result-main-group-name">{{ shuffledArray[10] }}</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[11] }}</span>
-            </div>
-          </div>
-          <div class="seat__result-main-even">
-            <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">{{ shuffledArray[12] }}</span>
-              <span class="seat__result-main-group-name">{{ shuffledArray[13] }}</span>
-            </div>
-            <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">{{ shuffledArray[14] }}</span>
-              <span class="seat__result-main-group-name">{{ shuffledArray[15] }}</span>
             </div>
           </div>
         </div>
@@ -127,7 +127,7 @@ export default {
   name: 'App',
   data() {
     return {
-      members: ['김예지', '김원건', '김은혜', '김현범', '박병윤', '박상직', '박수향', '배용호', '신용환', '신윤정', '신은욱', '유성재', '이혜정', '장정호', '최예진', '최찬영'],
+      members: ['김예지', '김원건', '김은혜', '박수향', '배용호', '신윤정', '신은욱', '유성재', '이혜정', '장정호', '최예진', '최찬영'],
       vote: null,
       me: null,
       choiceMember: null,
