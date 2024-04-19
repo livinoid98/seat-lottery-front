@@ -63,7 +63,6 @@
         <div class="seat__result-main">
           <div class="seat__result-main-odd">
             <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">박병윤</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[0] }}</span>
             </div>
             <div class="seat__result-main-group">
@@ -73,7 +72,6 @@
           </div>
           <div class="seat__result-main-even">
             <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">김현범</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[3] }}</span>
             </div>
             <div class="seat__result-main-group">
@@ -83,7 +81,6 @@
           </div>
           <div class="seat__result-main-odd">
             <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">신용환</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[6] }}</span>
             </div>
             <div class="seat__result-main-group">
@@ -93,7 +90,6 @@
           </div>
           <div class="seat__result-main-even">
             <div class="seat__result-main-group">
-              <span class="seat__result-main-group-name">박상직</span>
               <span class="seat__result-main-group-name">{{ shuffledArray[9] }}</span>
             </div>
             <div class="seat__result-main-group">
